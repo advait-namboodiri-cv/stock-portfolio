@@ -1,5 +1,25 @@
 [
   {
+    "id": "act-1781123094975-b5sl8",
+    "at": "2026-06-10T20:24:54.975Z",
+    "kind": "executed",
+    "symbol": "SCHD",
+    "action": "buy",
+    "notional": 5,
+    "summary": "Executed: buy $5 SCHD (order filled (mock))",
+    "reasoning": "Sample satellite idea so you can test the reject button too — the placeholder ruleset only requires the core ETF, so rejecting this is also rule-consistent."
+  },
+  {
+    "id": "act-1781123092139-p5q5r",
+    "at": "2026-06-10T20:24:52.139Z",
+    "kind": "rejected",
+    "symbol": "VOO",
+    "action": "buy",
+    "notional": 10,
+    "summary": "Rejected: buy $10 VOO",
+    "reasoning": "Placeholder ruleset is index-first. Cash sits well above the floor and VOO is the designated core; deploying a small slice keeps the portfolio on its target allocation."
+  },
+  {
     "id": "act-0001",
     "at": "2026-06-10T13:00:00.000Z",
     "kind": "note",

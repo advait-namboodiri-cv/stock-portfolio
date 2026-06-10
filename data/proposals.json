@@ -5,9 +5,12 @@
     "action": "buy",
     "symbol": "VOO",
     "notional": 10,
-    "rules": ["Core holding: broad-market ETF", "Cash above 20% floor"],
+    "rules": [
+      "Core holding: broad-market ETF",
+      "Cash above 20% floor"
+    ],
     "reasoning": "Placeholder ruleset is index-first. Cash sits well above the floor and VOO is the designated core; deploying a small slice keeps the portfolio on its target allocation.",
-    "status": "pending"
+    "status": "rejected"
   },
   {
     "id": "prop-0002",
@@ -15,8 +18,11 @@
     "action": "buy",
     "symbol": "SCHD",
     "notional": 5,
-    "rules": ["Satellite: diversify income sleeve"],
+    "rules": [
+      "Satellite: diversify income sleeve"
+    ],
     "reasoning": "Sample satellite idea so you can test the reject button too — the placeholder ruleset only requires the core ETF, so rejecting this is also rule-consistent.",
-    "status": "pending"
+    "status": "executed",
+    "orderId": "mock-1781123094969"
   }
 ]
