@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0a0d12;
-  --ink-raised: #10141c;
-  --ink-edge: #1c2230;
-  --paper: #e8e4d8;
-  --paper-dim: #9a968c;
-  --gain: #3ddc84;
-  --loss: #ff5d5d;
-  --agent: #f2b134;
-  --wire: #161b26;
+  /* light theme: --ink is the page background, --paper is the text color */
+  --ink: #f7f6f2;
+  --ink-raised: #ffffff;
+  --ink-edge: #e2dfd6;
+  --paper: #23272f;
+  --paper-dim: #6e7280;
+  --gain: #0e8a4d;
+  --loss: #d23f3f;
+  --agent: #a06f10;
+  --wire: #edebe3;
 }
 
 @theme inline {
@@ -22,14 +23,13 @@
   --color-loss: var(--loss);
   --color-agent: var(--agent);
   --color-wire: var(--wire);
-  --font-mono: var(--font-plex-mono);
-  --font-serif: var(--font-instrument);
+  --font-sans: var(--font-figtree);
 }
 
 body {
   background: var(--ink);
   color: var(--paper);
-  font-family: var(--font-plex-mono), monospace;
+  font-family: var(--font-figtree), sans-serif;
   background-image:
     linear-gradient(var(--wire) 1px, transparent 1px),
     linear-gradient(90deg, var(--wire) 1px, transparent 1px);
