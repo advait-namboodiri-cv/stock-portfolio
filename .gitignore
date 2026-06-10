@@ -49,3 +49,5 @@ AGENTS.md
 # local trading data
 data/briefing.*
 
+!.env.example
+
