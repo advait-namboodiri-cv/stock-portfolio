@@ -60,7 +60,7 @@ export default function Dashboard() {
       {/* masthead */}
       <header className="rise flex flex-wrap items-end justify-between gap-4 border-b border-ink-edge pb-5">
         <div>
-          <h1 className="font-serif italic text-5xl tracking-tight">Ticker Desk</h1>
+          <h1 className="text-4xl font-extrabold tracking-tight">Ticker Desk</h1>
           <p className="text-paper-dim text-xs mt-2 uppercase tracking-[0.25em]">
             philosophy-driven · human-approved
           </p>
@@ -94,7 +94,7 @@ export default function Dashboard() {
           <Stat label="Cash" value={acct ? money(acct.cash) : "—"} />
           <Stat label="Buying power" value={acct ? money(acct.buyingPower) : "—"} />
         </div>
-        <div className="lg:col-span-3 border border-ink-edge bg-ink-raised/70 p-4">
+        <div className="lg:col-span-3 border border-ink-edge bg-ink-raised p-4 rounded-lg shadow-sm">
           <div className="flex items-baseline justify-between mb-2">
             <h2 className="text-xs uppercase tracking-widest text-paper-dim">Equity · 1 month</h2>
             {portfolio && portfolio.history.length > 1 && (
@@ -122,7 +122,7 @@ export default function Dashboard() {
               Agent proposals{pending.length > 0 && ` · ${pending.length} pending`}
             </h2>
             {pending.length === 0 ? (
-              <p className="border border-ink-edge bg-ink-raised/70 p-4 text-paper-dim text-sm leading-relaxed">
+              <p className="border border-ink-edge bg-ink-raised p-4 text-paper-dim text-sm leading-relaxed rounded-lg shadow-sm">
                 No pending proposals. Run <code className="text-agent">npm run brief</code>, then ask
                 the agent to <code className="text-agent">/propose</code> from the briefing.
               </p>
@@ -159,7 +159,7 @@ function Stat({
 }) {
   const toneClass = tone === undefined ? "" : plClass(tone);
   return (
-    <div className="border border-ink-edge bg-ink-raised/70 p-4">
+    <div className="border border-ink-edge bg-ink-raised p-4 rounded-lg shadow-sm">
       <div className="text-[10px] uppercase tracking-[0.2em] text-paper-dim">{label}</div>
       <div className={`mt-1 text-xl font-medium tabular ${toneClass}`}>{value}</div>
       {sub && <div className={`text-xs tabular ${toneClass}`}>{sub}</div>}

@@ -18,12 +18,12 @@ export default async function PhilosophyPage() {
           <Link href="/" className="text-xs text-paper-dim hover:text-agent transition-colors">
             ← back to the desk
           </Link>
-          <h1 className="font-serif italic text-4xl mt-3">The Ruleset</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight mt-3">The Ruleset</h1>
           <p className="text-paper-dim text-xs mt-2 uppercase tracking-[0.25em]">
             what the agent is allowed to do, and nothing else
           </p>
         </header>
-        <pre className="rise whitespace-pre-wrap text-sm leading-relaxed text-paper/90 border border-ink-edge bg-ink-raised/70 p-6" style={{ animationDelay: "100ms" }}>
+        <pre className="rise whitespace-pre-wrap font-sans text-sm leading-relaxed text-paper/90 border border-ink-edge bg-ink-raised/70 p-6 rounded-lg" style={{ animationDelay: "100ms" }}>
           {md}
         </pre>
       </div>

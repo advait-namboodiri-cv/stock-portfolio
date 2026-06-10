@@ -37,7 +37,7 @@ export default function ProposalCard({ proposal, onDecided }: Props) {
   const isBuy = proposal.action === "buy";
 
   return (
-    <article className="border border-agent/40 bg-ink-raised/80 p-4 space-y-3">
+    <article className="border border-agent/40 bg-ink-raised p-4 space-y-3 rounded-lg shadow-sm">
       <header className="flex items-baseline justify-between gap-3">
         <div className="flex items-baseline gap-2">
           <span className={`text-xs font-semibold uppercase tracking-widest ${isBuy ? "text-gain" : "text-loss"}`}>
@@ -65,14 +65,14 @@ export default function ProposalCard({ proposal, onDecided }: Props) {
         <button
           onClick={() => decide("approve")}
           disabled={busy !== null}
-          className="flex-1 border border-gain/50 text-gain text-xs uppercase tracking-widest py-2 hover:bg-gain hover:text-ink transition-colors disabled:opacity-40 cursor-pointer"
+          className="flex-1 border border-gain/50 text-gain text-xs font-semibold uppercase tracking-widest py-2 rounded-md hover:bg-gain hover:text-white transition-colors disabled:opacity-40 cursor-pointer"
         >
           {busy === "approve" ? "sending…" : "Approve"}
         </button>
         <button
           onClick={() => decide("reject")}
           disabled={busy !== null}
-          className="flex-1 border border-ink-edge text-paper-dim text-xs uppercase tracking-widest py-2 hover:border-loss/60 hover:text-loss transition-colors disabled:opacity-40 cursor-pointer"
+          className="flex-1 border border-ink-edge text-paper-dim text-xs font-semibold uppercase tracking-widest py-2 rounded-md hover:border-loss/60 hover:text-loss transition-colors disabled:opacity-40 cursor-pointer"
         >
           {busy === "reject" ? "…" : "Reject"}
         </button>

@@ -4,13 +4,13 @@ import { money, plClass, signedPct } from "@/lib/format";
 export default function PositionsTable({ positions }: { positions: Position[] }) {
   if (positions.length === 0) {
     return (
-      <div className="border border-ink-edge bg-ink-raised/70 p-8 text-center text-paper-dim text-sm">
+      <div className="border border-ink-edge bg-ink-raised rounded-lg shadow-sm p-8 text-center text-paper-dim text-sm">
         No positions yet — approve a proposal to open one.
       </div>
     );
   }
   return (
-    <div className="border border-ink-edge bg-ink-raised/70 overflow-x-auto">
+    <div className="border border-ink-edge bg-ink-raised rounded-lg shadow-sm overflow-x-auto">
       <table className="w-full text-sm tabular">
         <thead>
           <tr className="text-paper-dim text-xs uppercase tracking-widest border-b border-ink-edge">
