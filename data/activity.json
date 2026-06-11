@@ -1,5 +1,15 @@
 [
   {
+    "id": "act-1781140221822-wjosa",
+    "at": "2026-06-11T01:10:21.822Z",
+    "kind": "executed",
+    "symbol": "VOO",
+    "action": "buy",
+    "notional": 5,
+    "summary": "Executed: buy $5 VOO (order accepted)",
+    "reasoning": "One-time $5 test order to confirm the approve flow reaches the real Alpaca paper account. Not a philosophy-driven trade."
+  },
+  {
     "id": "act-1781123094975-b5sl8",
     "at": "2026-06-10T20:24:54.975Z",
     "kind": "executed",

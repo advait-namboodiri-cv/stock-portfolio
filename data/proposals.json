@@ -24,5 +24,18 @@
     "reasoning": "Sample satellite idea so you can test the reject button too — the placeholder ruleset only requires the core ETF, so rejecting this is also rule-consistent.",
     "status": "executed",
     "orderId": "mock-1781123094969"
+  },
+  {
+    "id": "prop-test-alpaca",
+    "createdAt": "2026-06-11T01:09:33.904Z",
+    "action": "buy",
+    "symbol": "VOO",
+    "notional": 5,
+    "rules": [
+      "System test: verify live order pipeline"
+    ],
+    "reasoning": "One-time $5 test order to confirm the approve flow reaches the real Alpaca paper account. Not a philosophy-driven trade.",
+    "status": "executed",
+    "orderId": "39a9931c-7411-4f15-924f-fec03fbd0bf7"
   }
 ]
