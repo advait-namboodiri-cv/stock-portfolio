@@ -28,11 +28,5 @@
     "notional": 10,
     "summary": "Rejected: buy $10 VOO",
     "reasoning": "Placeholder ruleset is index-first. Cash sits well above the floor and VOO is the designated core; deploying a small slice keeps the portfolio on its target allocation."
-  },
-  {
-    "id": "act-0001",
-    "at": "2026-06-10T13:00:00.000Z",
-    "kind": "note",
-    "summary": "Portfolio initialized with the placeholder philosophy (index-first). Replace data/philosophy.md with your real ruleset after finishing the field guide."
   }
 ]

@@ -117,19 +117,16 @@ export default function Dashboard() {
         </div>
 
         <div className="space-y-6">
-          <div className="space-y-3">
-            <h2 className="text-xs uppercase tracking-widest text-agent">
-              Agent proposals{pending.length > 0 && ` · ${pending.length} pending`}
-            </h2>
-            {pending.length === 0 ? (
-              <p className="border border-ink-edge bg-ink-raised p-4 text-paper-dim text-sm leading-relaxed rounded-lg shadow-sm">
-                No pending proposals. Run <code className="text-agent">npm run brief</code>, then ask
-                the agent to <code className="text-agent">/propose</code> from the briefing.
-              </p>
-            ) : (
-              pending.map((p) => <ProposalCard key={p.id} proposal={p} onDecided={refresh} />)
-            )}
-          </div>
+          {pending.length > 0 && (
+            <div className="space-y-3">
+              <h2 className="text-xs uppercase tracking-widest text-agent">
+                Agent proposals · {pending.length} pending
+              </h2>
+              {pending.map((p) => (
+                <ProposalCard key={p.id} proposal={p} onDecided={refresh} />
+              ))}
+            </div>
+          )}
 
           <div className="space-y-3">
             <h2 className="text-xs uppercase tracking-widest text-paper-dim">Activity</h2>
@@ -139,8 +136,7 @@ export default function Dashboard() {
       </section>
 
       <footer className="rise border-t border-ink-edge pt-4 text-[11px] text-paper-dim" style={{ animationDelay: "240ms" }}>
-        Ruleset: <a href="/philosophy" className="text-agent hover:underline">data/philosophy.md</a> · every
-        order requires your approval · educational project, not financial advice
+        every order requires your approval
       </footer>
     </div>
   );
